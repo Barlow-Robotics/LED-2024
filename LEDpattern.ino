@@ -52,7 +52,7 @@ void setup() {
   FastLED.addLeds<WS2812B, LED_PIN, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(255);
 
-  Serial.begin(57600);
+  Serial.begin(9600);
 
   //Fill the colorIndex array with random numbers
   for (int i = 0; i < NUM_LEDS; i++) {
@@ -61,7 +61,7 @@ void setup() {
 }
 
 void loop() {
-  currentMode = 0b10000000;
+  // currentMode = 0b10000000;
   // bool isBlueAlliance = (currentMode & 0b00000001) == 0b00000000;
   // bool isRedAlliance = (currentMode & 0b00000001) == 0b00000001; //hubv if binary data at 10 (2) than red
   bool isEnabled = (currentMode & 0b00000010) == 0b00000010;

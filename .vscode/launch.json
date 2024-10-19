@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/brianw/Documents/GitHub/LED-2024",
+      "program": "/Users/brianw/Documents/GitHub/LED-2024/build/Debug/outDebug"
+    }
+  ]
+}
